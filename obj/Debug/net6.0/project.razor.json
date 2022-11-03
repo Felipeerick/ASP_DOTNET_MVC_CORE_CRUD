@@ -16298,6 +16298,16 @@
   "RootNamespace": "projeto_web",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\Product\\index.cshtml",
+      "TargetPath": "Views\\Product\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\Product\\create.cshtml",
+      "TargetPath": "Views\\Product\\create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -16308,6 +16318,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\Category\\edit.cshtml",
+      "TargetPath": "Views\\Category\\edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -16315,6 +16330,11 @@
     {
       "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\Product\\edit.cshtml",
+      "TargetPath": "Views\\Product\\edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16330,6 +16350,11 @@
     {
       "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\Category\\create.cshtml",
       "TargetPath": "Views\\Category\\create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Felipe\\Desktop\\estudo .NET\\projeto web\\Views\\Product\\show.cshtml",
+      "TargetPath": "Views\\Product\\show.cshtml",
       "FileKind": "mvc"
     },
     {

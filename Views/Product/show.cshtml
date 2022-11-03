@@ -1,0 +1,13 @@
+@model projeto_web.Models.Product;
+
+@{
+    ViewData["title"] = "detalhes do produto " + @Model.Name;
+}
+
+<h3>Detalhes do produto @Model.Name</h3>
+<hr>
+<ul>
+    <li>Id: @Model.Id</li>
+    <li>Quantidade: @Model.Quantity</li>
+    <li>Valor: @Model.Value</li>
+</ul>

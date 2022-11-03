@@ -36,5 +36,31 @@ namespace projeto_web.Controllers
 
            return View(data);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> edit(int id){
+            return View(await _context.Categories.FindAsync(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> update(Category data){
+           if(ModelState.IsValid)
+           {
+                _context.Categories.Update(data);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+           }
+
+           return View(data);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> destroy(int id){
+            
+            Category category = await _context.Categories.FindAsync(id);
+            _context.Categories.Remove(category);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }  
     }
 }

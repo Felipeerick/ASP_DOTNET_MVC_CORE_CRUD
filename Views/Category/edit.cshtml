@@ -1,0 +1,15 @@
+@model projeto_web.Models.Category;
+@{
+    ViewData["title"] = "Editando Categorias";
+}
+
+<h1>Editando categoria @Model.Name</h1>
+<hr>
+
+<form asp-action="update" class='rounded shadow p-3 p-lg-5 form-group' enctype="multipart/form-data">
+    <input type="hidden" asp-for="@Model.Id">
+    <input asp-for="Name" type="text" minlength="3" maxlength="40" maxlength="20" required class="form-control"  placeholder="Nome da categoria">
+    <div class='text-center'>
+        <button type="submit" class='btn btn-warning mt-2'>Atualizar categoria</button>
+    </div>
+</form>
