@@ -1,0 +1,36 @@
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\appsettings.json
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\projeto web.staticwebassets.runtime.json
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\projeto web.exe
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\projeto web.deps.json
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\projeto web.runtimeconfig.json
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\projeto web.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\projeto web.pdb
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.csproj.AssemblyReference.cache
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.AssemblyInfoInputs.cache
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.AssemblyInfo.cs
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.RazorAssemblyInfo.cache
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.RazorAssemblyInfo.cs
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\scopedcss\bundle\projeto web.styles.css
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\scopedcss\projectbundle\projeto web.bundle.scp.css
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.csproj.CopyComplete
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\refint\projeto web.dll
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.pdb
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\projeto web.genruntimeconfig.cache
+C:\Users\Felipe\Desktop\estudo .NET\projeto web\obj\Debug\net6.0\ref\projeto web.dll
