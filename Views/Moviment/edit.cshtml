@@ -1,0 +1,22 @@
+@model projeto_web.Models.Moviment;
+
+@{
+    ViewData["title"] = "Editando Movimentações";
+}
+
+<h1>Editando movimentação</h1>
+<hr>
+
+<form asp-action="update" class='rounded shadow p-3 p-lg-5 form-group' enctype="multipart/form-data">
+    <input type="hidden" asp-for="@Model.Id">
+    <select asp-for="NameMoviment" required class="form-control"> 
+        <option value="ENTRADA">ENTRADA</option>
+        <option value="SAIDA">SAIDA</option>
+    </select>
+    <input asp-for="Description" type="text" minlength="3" maxlength="40" maxlength="20" required class="form-control my-2"  placeholder="Descrição da Movimentação">
+    <input asp-for="Quantity" type="number" minlength="3" maxlength="40"  required class="form-control"  placeholder="Quantidade">
+    <select asp-for="Product_id" asp-items="@ViewBag.Product_id"  required class="form-control my-2"></select>
+    <div class='text-center'>
+        <button type="submit" class='btn btn-warning mt-2'>Editar movimentação</button>
+    </div>
+</form>

@@ -16,4 +16,6 @@ namespace projeto_web.Models
 
         public ICollection<Moviment>? Moviments {get; set;}
     }
+
+        
 }

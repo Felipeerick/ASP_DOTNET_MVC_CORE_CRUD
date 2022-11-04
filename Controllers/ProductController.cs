@@ -22,13 +22,15 @@ namespace projeto_web.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> create(){
+        public async Task<IActionResult> create()
+        {
             ViewData["Category_id"] = new SelectList(await _context.Categories.ToListAsync(),"Id", "Name");
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> store(Product request){
+        public async Task<IActionResult> store(Product request)
+        {
            if(ModelState.IsValid)
            {
                 await _context.Products.AddAsync(request);
@@ -36,11 +38,12 @@ namespace projeto_web.Controllers
                 return RedirectToAction(nameof(Index));
            }
             ViewData["Category_id"] = new SelectList(await _context.Categories.ToListAsync(),"Id", "Name", request.Category_id);
-           return View(request);
+            return View(request);
         } 
 
         [HttpGet]
-        public async Task<IActionResult> edit(int id){
+        public async Task<IActionResult> edit(int id)
+        {
             Product product = await _context.Products.FindAsync(id);
 
             ViewData["Category_id"] = new SelectList(await _context.Categories.ToListAsync(),"Id", "Name", product.Category_id);
@@ -49,7 +52,8 @@ namespace projeto_web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> update(Product request){
+        public async Task<IActionResult> update(Product request)
+        {
            if(ModelState.IsValid)
            {
                 _context.Products.Update(request);
@@ -57,11 +61,12 @@ namespace projeto_web.Controllers
                 return RedirectToAction(nameof(Index));
            }
             ViewData["Category_id"] = new SelectList(await _context.Categories.ToListAsync(),"Id", "Name", request.Category_id);
-           return View(request);
+            return View(request);
         }
 
         [HttpPost]
-        public async Task<IActionResult> destroy(int id){
+        public async Task<IActionResult> destroy(int id)
+        {
             
             Product product = await _context.Products.FindAsync(id);
             _context.Products.Remove(product);
@@ -71,7 +76,8 @@ namespace projeto_web.Controllers
 
         [HttpGet]
 
-        public async Task<IActionResult> show (int id){
+        public async Task<IActionResult> show (int id)
+        {
             Product product = await _context.Products.FindAsync(id);
 
             return View(product);

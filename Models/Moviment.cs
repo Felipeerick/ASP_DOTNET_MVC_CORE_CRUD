@@ -5,6 +5,8 @@ namespace projeto_web.Models
         public int Id { get; set; }
 
         public int Product_id {get; set;}
+        
+        public string? NameMoviment {get; set;}
 
         public int Quantity { get; set; }
 
