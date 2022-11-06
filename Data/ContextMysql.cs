@@ -5,11 +5,11 @@ namespace projeto_web.Data
 {
     public class ContextMysql : DbContext
     {
-        public DbSet<Product>? Products {get; set;}
+        public DbSet<Product> Products {get; set;}
 
-        public DbSet<Moviment>? Moviments {get; set;}
+        public DbSet<Moviment> Moviments {get; set;}
 
-        public DbSet<Category>? Categories {get; set;}
+        public DbSet<Category> Categories {get; set;}
 
         public ContextMysql(DbContextOptions<ContextMysql>options) : base(options)
         {

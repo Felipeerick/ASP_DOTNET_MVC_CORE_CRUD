@@ -6,14 +6,14 @@ namespace projeto_web.Models
 
         public int Product_id {get; set;}
         
-        public string? NameMoviment {get; set;}
+        public string NameMoviment {get; set;}
 
         public int Quantity { get; set; }
 
-        public Product? Product {get; set;}
+        public Product Product {get; set;}
 
-        public string? DateMoviment {get; set;}
+        public string DateMoviment {get; set;}
 
-         public string? Description {get; set;}
+         public string Description {get; set;}
     }
 }

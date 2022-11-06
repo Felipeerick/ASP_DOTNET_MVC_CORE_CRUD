@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ContextMysql>
-(options => options.UseMySql("host=localhost;database=teste;user=root;password=12;", 
+(options => options.UseMySql(builder.Configuration.GetConnectionString("connectionDB"), 
 Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.30-mysql")));
 
 var app = builder.Build();

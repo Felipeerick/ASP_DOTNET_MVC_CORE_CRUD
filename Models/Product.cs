@@ -4,7 +4,7 @@ namespace projeto_web.Models
     { 
         public int Id { get; set; }
 
-        public string? Name { get; set; }   
+        public string Name { get; set; }   
 
         public int Quantity {get; set;}
 
@@ -12,9 +12,9 @@ namespace projeto_web.Models
 
         public int Category_id {get; set;}
 
-        public Category? Category {get; set;}
+        public Category Category {get; set;}
 
-        public ICollection<Moviment>? Moviments {get; set;}
+        public ICollection<Moviment> Moviments {get; set;}
     }
 
         
