@@ -19,9 +19,17 @@ namespace projeto_web.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-            return View(await _context.Moviments.Include(p => p.Product).AsNoTracking().ToListAsync());
+            ViewData["CurrentFilter"] = search;
+
+            var moviments = from m in _context.Moviments select m;
+
+            if(!String.IsNullOrEmpty(search)){
+                moviments = moviments.Where(s => s.NameMoviment.Contains(search) || s.Description.Contains(search));
+            }
+
+            return View(await moviments.Include(p => p.Product).AsNoTracking().Take(7).ToListAsync());
         }
 
         [HttpGet]
