@@ -18,13 +18,13 @@ namespace projeto_web.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Products.Include(p => p.Category).ToListAsync());
+            return View(await _context.Products.Include(p => p.Category).AsNoTracking().ToListAsync());
         }
 
         [HttpGet]
         public async Task<IActionResult> create()
         {
-            ViewData["Category_id"] = new SelectList(await _context.Categories.ToListAsync(),"Id", "Name");
+            ViewData["Category_id"] = new SelectList(await _context.Categories.AsNoTracking().ToListAsync(),"Id", "Name");
             return View();
         }
 
@@ -37,7 +37,7 @@ namespace projeto_web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
            }
-            ViewData["Category_id"] = new SelectList(await _context.Categories.ToListAsync(),"Id", "Name", request.Category_id);
+            ViewData["Category_id"] = new SelectList(await _context.Categories.AsNoTracking().ToListAsync(),"Id", "Name", request.Category_id);
             return View(request);
         } 
 
@@ -46,7 +46,7 @@ namespace projeto_web.Controllers
         {
             Product product = await _context.Products.FindAsync(id);
 
-            ViewData["Category_id"] = new SelectList(await _context.Categories.ToListAsync(),"Id", "Name", product.Category_id);
+            ViewData["Category_id"] = new SelectList(await _context.Categories.AsNoTracking().ToListAsync(),"Id", "Name", product.Category_id);
             
             return View(product);
         }
@@ -60,7 +60,7 @@ namespace projeto_web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
            }
-            ViewData["Category_id"] = new SelectList(await _context.Categories.ToListAsync(),"Id", "Name", request.Category_id);
+            ViewData["Category_id"] = new SelectList(await _context.Categories.AsNoTracking().ToListAsync(),"Id", "Name", request.Category_id);
             return View(request);
         }
 

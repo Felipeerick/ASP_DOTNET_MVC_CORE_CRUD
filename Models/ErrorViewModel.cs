@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 namespace projeto_web.Models;
 
 public class ErrorViewModel

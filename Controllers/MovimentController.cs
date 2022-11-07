@@ -21,38 +21,38 @@ namespace projeto_web.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Moviments.Include(p => p.Product).ToListAsync());
+            return View(await _context.Moviments.Include(p => p.Product).AsNoTracking().ToListAsync());
         }
 
         [HttpGet]
         public async Task<IActionResult> create()
         {
-            ViewData["Product_id"] = new SelectList(await _context.Products.ToListAsync(), "Id", "Name");
+            ViewData["Product_id"] = new SelectList(await _context.Products.AsNoTracking().ToListAsync(), "Id", "Name");
             
             return View();
         }
 
         public async Task<IActionResult> store(Moviment data)
         {
-            data.DateMoviment = DateTime.Now.ToString();
+            data.DateMoviment = DateTime.Now;
 
-            ViewData["Product_id"] = new SelectList(await _context.Products.ToListAsync(), "Id", "Name", data.Product_id);
+            ViewData["Product_id"] = new SelectList(await _context.Products.AsNoTracking().ToListAsync(), "Id", "Name", data.Product_id);
 
             if(ModelState.IsValid)
             {   
                 var product = await _context.Products.FindAsync(data.Product_id);
 
-                if(data.NameMoviment == "ENTRADA")
+                switch(data.NameMoviment)
                 {
+                    case "ENTRADA":
                     product.Quantity = product.Quantity + data.Quantity;
-                    
                     _context.Products.Update(product);
-                }
-                else if(data.NameMoviment == "SAIDA")
-                {
+                    break;
+                
+                    case "SAIDA":
                     product.Quantity = product.Quantity - data.Quantity;
-                    
                     _context.Products.Update(product);
+                    break;
                 }
 
                 await _context.Moviments.AddAsync(data);
@@ -70,17 +70,17 @@ namespace projeto_web.Controllers
 
             if(moviment != null)
             {
-                ViewData["Product_id"] = new SelectList(await _context.Products.ToListAsync(), "Id", "Name", moviment.Product_id);
+                ViewData["Product_id"] = new SelectList(await _context.Products.AsNoTracking().ToListAsync(), "Id", "Name", moviment.Product_id);
 
                 return View(moviment);
             }
 
-           return RedirectToAction(nameof(Index));
+           return NotFound();
         }
 
         public async Task<IActionResult> update(Moviment data)
         {
-            data.DateMoviment = DateTime.Now.ToString();
+            data.DateMoviment = DateTime.Now;
 
             if(ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace projeto_web.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["Product_id"] = new SelectList(await _context.Products.ToListAsync(), "Id", "Name", data.Product_id);
+            ViewData["Product_id"] = new SelectList(await _context.Products.AsNoTracking().ToListAsync(), "Id", "Name", data.Product_id);
             
             return View(data);
         }

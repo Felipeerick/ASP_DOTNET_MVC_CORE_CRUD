@@ -10,7 +10,7 @@ namespace projeto_web.Map
         public void Configure(EntityTypeBuilder<Moviment>builder){
             builder.HasKey(k => k.Id);
             builder.Property(q => q.Quantity).IsRequired();
-             builder.Property(m => m.NameMoviment).IsRequired();
+            builder.Property(m => m.NameMoviment).IsRequired();
             builder.Property(d => d.Description).IsRequired();
             builder.Property(dt => dt.DateMoviment).IsRequired();
 
