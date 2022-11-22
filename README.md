@@ -7,7 +7,7 @@ dotnet add package Microsoft.EntityFrameworkCore
 
 dotnet add package Microsoft.EntityFrameworkCore.tools
 
-Obs: caso, você queira usar o razorPages instale esses pacotes
+Obs: caso, vocÃª queira usar o razorPages instale esses pacotes
 abaixo:
 
 dotnet add package Microsoft.EntityFrameworkCore.Design
@@ -45,15 +45,23 @@ dotnet add package Pomelo.EntityFrameworkCore.SQLite
 dotnet run
 ```
 
-## adicionando migrações
+## adicionando migraÃ§Ãµes
 
 ```
-Obs: caso ocorra erro dizendo que não possui a ferramenta global use:
-dotnet tool install --global dotnet-e
+Obs: caso ocorra erro dizendo que nÃ£o possui a ferramenta global use:
+dotnet tool install --global dotnet-ef
 
 dotnet ef migrations add initial_migrate
 
 dotnet ef database update 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Obs: caso esteja trabalhando em um projeto com design pattern e a pasta de entidades fique em uma pasta diferente, use:
+
+dotnet ef migrations add "models do crud" -s ..\NomeDaPasta\ArquivoConfigurado.csproj 
+
+dotnet ef database update -s ..\Matching.WebAPI\Matching.WebAPI.csproj 
 
 ```
 
